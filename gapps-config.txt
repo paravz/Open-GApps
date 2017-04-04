@@ -1,0 +1,162 @@
+# TODO/NOTES
+#	- Consider removing: chrome, androidpay, lockclock, timeservice, jelly ?
+ 
+# v2 (7.1.2) 
+#	- added BatteryUsage (Turbo.apk), but it's not supported in LOS 14.1 in 201705
+#	- repack: youtube
+
+# v1 (7.1.0)
+#	- pixel launcher, assistant, android pay, chrome
+#	- repack: youtube and old cameragoogle compatible with hammerhead
+
+#Test
+Include
+
+# Pico+
+DialerFramework        # Install Dialer Framework
+CalSync                # Install Google Calendar Sync (except if Google Calendar is being installed)
+GoogleTTS              # Install Google Text-to-Speech (Micro+ on 5.0-, Pico+ on 6.0+)
+PackageInstallerGoogle # Install Google Package Installer
+
+# Nano+
+BatteryUsage           # Install Device Health Services (7.1+)
+FaceDetect             # Install FaceUnlock
+FaceUnlock             # Install FaceUnlock
+Search                 # Install Google Search (including includes Hotword, excluding excludes GoogleNow and PixelLauncher)
+Speech                 # Install Offline Speech Files
+Hotword                # Install OK Google Hotword Enrollment
+
+# Micro+
+#Gmail                  # Install Gmail
+#CalendarGoogle         # Install Google Calendar
+#ExchangeGoogle         # Install Google Exchange Services
+#GoogleNow              # Install Google Now Launcher (requires Search)
+#GoogleTTS              # Install Google Text-to-Speech (Micro+ on 5.0-, Pico+ on 6.0+)
+
+# Mini+
+#CalculatorGoogle       # Install Google Calculator
+#ClockGoogle            # Install Google Clock
+#Maps                   # Install Google Maps
+#TagGoogle              # Install Google NFC Tags
+#Photos                 # Install Google Photos
+#GooglePlus             # Install Google+
+#Hangouts               # Install Hangouts
+YouTube                # Install YouTube
+
+# Full+
+Chrome                 # Install Google Chrome Browser
+#CloudPrint             # Install Google Cloud Print
+#Docs                   # Install Google Docs
+#Drive                  # Install Google Drive
+#Fitness                # Install Google Fit
+#Keep                   # Install Google Keep
+#NewsWidget             # Install Google News & Weather
+#Books                  # Install Google Play Books
+#PlayGames              # Install Google Play Games
+#Movies                 # Install Google Play Movies & TV
+#Music                  # Install Google Play Music
+#NewsStand              # Install Google Play Newsstand
+#Sheets                 # Install Google Sheets
+#Slides                 # Install Google Slides
+#Talkback               # Install Google TalkBack
+
+# Stock+
+CameraGoogle           # Install Google Camera
+#ContactsGoogle         # Install Google Contacts
+#DialerGoogle           # Install Google Dialer
+KeyboardGoogle         # Install Google Keyboard
+#Messenger              # Install Google Messenger (except on tablet devices)
+PixelIcons             # Install Google Pixel Icons
+#StorageManagerGoogle   # Install Google Storage Manager
+#VRService              # Install Google VR Services
+#WebViewGoogle          # Install Google Webview
+PixelLauncher          # Install Pixel Launcher (requires Search and Wallpapers)
+#PrintServiceGoogle     # Install Print Service Recommendation Service
+Wallpapers             # Install Wallpapers
+
+# Super+
+AndroidPay             # Install Android Pay (doesn't work on LOS 14.1 with root)
+#DMAgent                # Install Google Apps Device Policy
+#GCS                    # Install Google Connectivity Services (excluding also excludes ProjectFi)
+#Earth                  # Install Google Earth
+#Indic                  # Install Google Indic Keyboard
+#Japanese               # Install Google Japanese Input
+#Korean                 # Install Google Korean Input
+#Pinyin                 # Install Google Pinyin Input
+#Street                 # Install Google Street View
+#Translate              # Install Google Translate
+#Zhuyin                 # Install Google Zhuyin Input
+#ProjectFi              # Install Project Fi by Google
+
+# Enable google assistant (adds ro.opa.eligible_device=true to build.prop)
+GoogleAssistant 
+
+###################################################
+# Remove apps (uncomment a line to remove the app)
+# CMAccount               # Remove CM Account
+# CMBugReport             # Remove CM Bug Report
+# CMAudioFX               # Remove CM AudioFX
+# CMFileManager           # Remove CM File Manager
+# CMMusic                 # Remove CM Music
+# CMScreenCast            # Remove CM ScreenCast
+# CMSetupWizard           # Remove CM Setup Wizard (see Notes for CMSetupWizard)
+# CMUpdater               # Remove CM Updater
+CMWallpapers            # Remove CM Wallpapers
+# CMWeatherProvider       # Remove CM Weather Underground
+
+# DashClock               # Remove DashClock Widget (found in certain ROMs)
+# Hexo                    # Remove Hexo Libre CM Theme
+# LRecorder               # Remove LineageOS Recorder
+# LSetupWizard            # Remove LineageOS Setup Wizard
+# OmniSwitch              # Remove OmniSwitch recent apps switcher replacement
+
+BasicDreams             # Remove Basic Dreams Wallpaper
+Galaxy                  # Remove Galaxy (also known as BlackHole) Wallpaper
+HoloSpiral              # Remove Holo Spiral Wallpaper
+NoiseField              # Remove Noise Field Wallpaper
+Phasebeam               # Remove Phasebeam Wallpaper
+PhotoPhase              # Remove Photo Phase Wallpaper
+PhotoTable              # Remove Photo Table Wallpaper
+
+Browser                 # Remove Stock Browser
+# CalculatorStock         # Remove Stock Calculator (automatically removed when Google Calculator is installed)
+# CalendarStock           # Remove Stock Calendar (automatically removed when Google Calendar is installed)
+# CameraStock             # Remove Stock Camera (Including CAF's camera application, Snap)
+# ClockStock              # Remove Stock Desk Clock (automatically removed when Google Clock is installed)
+# Email                   # Remove Stock Email Client
+# ExchangeStock           # Remove Stock Exchange Services (automatically removed when Google Exchange Services is installed)
+# MzFileManager           # Remove Stock FlymeOS File Manager
+# MzPay                   # Remove Stock FlymeOS Pay system (because MzPay services works only in China)
+# MzSetupWizard           # Remove Stock FlymeOS SetupWizard
+# MzUpdater               # Remove Stock FlymeOS Updaters
+# MzWeather               # Remove Stock FlymeOS Weather (because MzWeather service work only in China)
+# FMRadio                 # Remove Stock FM Radio (not found on all devices or ROMs)
+# Gallery                 # Remove Stock Gallery
+# KeyboardStock           # Remove Stock Keyboard (automatically removed when Google Keyboard is installed)
+Launcher                # Remove Stock Launcher(s)
+LiveWallpapers          # Remove Stock Live Wallpapers
+# LockClock               # Remove Stock Lockscreen Clock Widget
+# Studio                  # Remove Stock Movie Studio
+# TagStock                # Remove Stock NFC Tags (automatically removed when Google NFC Tags is installed)
+# PicoTTS                 # Remove Stock PicoTTS
+# PrintServiceStock       # Remove Stock Print Service Recommendation Service (automatically removed when Google Print Service Recommendation Service is installed)
+# SimToolKit              # Remove Stock SimToolKit
+# SoundRecorder           # Remove Stock Sound Recorder
+# MMS                     # Remove Stock SMS (automatically removed if Google Messenger and/or Hangouts is installed)
+# StorageManagerStock     # Remove Stock Storage Manager (automatically removed when Google Storage Manager is installed)
+# Terminal                # Remove Stock Terminal
+# Themes                  # Remove Stock Theme Engine (will break the Settings Entry and can cause unexpected reboots on some ROMs)
+# VisualizationWallpapers # Remove Stock Visualization Wallpapers
+# WhisperPush             # Remove Stock WhisperPush support
+
+
+# For example, to remove the Spare Parts app found in many ROMs, 
+# simply add (SpareParts) to your gapps-config.
+#(Snap.apk)
+# from https://github.com/nvllsvm/freecyngn/blob/master/20-freecyngn.sh
+#(LockClock) 
+#(TimeService)
+
+# maybe
+#(Gallery2.apk) #Gallery
+
