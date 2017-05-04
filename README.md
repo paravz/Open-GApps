@@ -1,6 +1,6 @@
 # Open-GApps
 
-My custom gapps-config.txt is created following [Open GApps Advanced Features and Options](https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options) and only includes packages I need.
+My custom gapps-config.txt created following [Open GApps Advanced Features and Options](https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options).
 
 # GApps repackaging
 Bash script for Unix/Linux/Mac/Cygwin to replace standard APKs included in opengapps with your custom versions.
@@ -15,7 +15,7 @@ Bash script for Unix/Linux/Mac/Cygwin to replace standard APKs included in openg
 - [Open GApps .zip archive](http://opengapps.org/) for your version and achitecture
 - extracted directory structure for repackaging, similar to rep_youtube
 
-
+**Example**
 ````
 $ bash gapps_repackage.sh
 INFO: Extracting open_gapps-arm-7.1-super-20170310.zip
