@@ -13,7 +13,7 @@ Bash script for Unix/Linux/Mac/Cygwin to replace standard APKs included in openg
 **Requirements**
 - bash, unzip, zip, lzip, find
 - [Open GApps .zip archive](http://opengapps.org/) for your version and achitecture
-- extracted directory structure for repackaging, similar to rep_youtube
+- extracted directory structure for repackaging, similar to rep_youtube. Note per-DPI directories used by Open GApps, you would typically need a package for your device's DPI
 
 **Example**
 ````
