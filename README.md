@@ -1,14 +1,15 @@
 # Open-GApps
 
-My custom gapps-config.txt created following [Open GApps Advanced Features and Options](https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options).
+My custom gapps-config.txt created following [Open GApps Advanced Features and Options](https://github.com/opengapps/opengapps/wiki/Advanced-Features-and-Options). I use it with [LineageOS](https://lineageos.org/), will work for other Android ROMs that support [OpenGapps](http://opengapps.org/).
 
 # GApps repackaging
 Bash script for Unix/Linux/Mac/Cygwin to replace standard APKs included in opengapps with your custom versions.
 
-**Sample uses**
+**Why repackage?**
 
+- keep customizations in a single .zip
 - include older version of googlecamera that works for your phone (ie hammerhead needs googlecamera 3.2 to support HDR+)
-- replace youtube.apk with a ad-free patched version from [arter97](https://forum.xda-developers.com/android/apps-games/app-patched-ad-free-youtube-apks-t3449312)
+- replace youtube.apk with a ad-free patched version from [arter97](https://forum.xda-developers.com/android/apps-games/app-patched-ad-free-youtube-apks-t3449312) or [vanced edition](https://forum.xda-developers.com/showpost.php?p=72775808&postcount=2)
 
 **Requirements**
 - bash, unzip, zip, lzip, find
@@ -16,6 +17,9 @@ Bash script for Unix/Linux/Mac/Cygwin to replace standard APKs included in openg
 - extracted directory structure for repackaging, similar to rep_youtube. Note per-DPI directories used by Open GApps, you would typically need a package for your device's DPI
 
 **Example**
+- Clone this repo
+- Download YouTube apk for your DPI (or download APKs for all DPIs if unsure) into *rep_youtube*
+- Run gapps_repackage.sh and install resulting .zip same way you would install OpenGapps zip:
 ````
 $ bash gapps_repackage.sh
 INFO: Extracting open_gapps-arm-7.1-super-20170310.zip
