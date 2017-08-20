@@ -1,5 +1,8 @@
 # TODO/NOTES
-#	- Consider removing: chrome, androidpay, lockclock, timeservice, jelly ?
+
+# v3 (7.1.2)
+#	- removed BatteryUsage, Chrome, Androidplay, GoogleAssistant
+#	- repack: "vanced" youtube 
  
 # v2 (7.1.2) 
 #	- added BatteryUsage (Turbo.apk), but it's not supported in LOS 14.1 in 201705
@@ -19,12 +22,11 @@ GoogleTTS              # Install Google Text-to-Speech (Micro+ on 5.0-, Pico+ on
 PackageInstallerGoogle # Install Google Package Installer
 
 # Nano+
-BatteryUsage           # Install Device Health Services (7.1+)
-FaceDetect             # Install FaceUnlock
-FaceUnlock             # Install FaceUnlock
-Search                 # Install Google Search (including includes Hotword, excluding excludes GoogleNow and PixelLauncher)
+#BatteryUsage           # Install Device Health Services (7.1+) - not supported in LOS 14.1 
+#FaceDetect             # Install FaceUnlock
+#FaceUnlock             # Install FaceUnlock
+Search                 # Install Google Search (excluding excludes GoogleNow and PixelLauncher)
 Speech                 # Install Offline Speech Files
-Hotword                # Install OK Google Hotword Enrollment
 
 # Micro+
 #Gmail                  # Install Gmail
@@ -44,7 +46,7 @@ Hotword                # Install OK Google Hotword Enrollment
 YouTube                # Install YouTube
 
 # Full+
-Chrome                 # Install Google Chrome Browser
+#Chrome                 # Install Google Chrome Browser
 #CloudPrint             # Install Google Cloud Print
 #Docs                   # Install Google Docs
 #Drive                  # Install Google Drive
@@ -75,7 +77,7 @@ PixelLauncher          # Install Pixel Launcher (requires Search and Wallpapers)
 Wallpapers             # Install Wallpapers
 
 # Super+
-AndroidPay             # Install Android Pay (doesn't work on LOS 14.1 with root)
+#AndroidPay             # Install Android Pay (doesn't work on LOS 14.1 with root)
 #DMAgent                # Install Google Apps Device Policy
 #GCS                    # Install Google Connectivity Services (excluding also excludes ProjectFi)
 #Earth                  # Install Google Earth
@@ -89,7 +91,7 @@ AndroidPay             # Install Android Pay (doesn't work on LOS 14.1 with root
 #ProjectFi              # Install Project Fi by Google
 
 # Enable google assistant (adds ro.opa.eligible_device=true to build.prop)
-GoogleAssistant 
+#GoogleAssistant 
 
 ###################################################
 # Remove apps (uncomment a line to remove the app)
@@ -118,7 +120,7 @@ Phasebeam               # Remove Phasebeam Wallpaper
 PhotoPhase              # Remove Photo Phase Wallpaper
 PhotoTable              # Remove Photo Table Wallpaper
 
-Browser                 # Remove Stock Browser
+# Browser                 # Remove Stock Browser
 # CalculatorStock         # Remove Stock Calculator (automatically removed when Google Calculator is installed)
 # CalendarStock           # Remove Stock Calendar (automatically removed when Google Calendar is installed)
 # CameraStock             # Remove Stock Camera (Including CAF's camera application, Snap)
